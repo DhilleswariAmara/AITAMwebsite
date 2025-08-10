@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - AITAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="aitam_logo.png" alt="AITAM Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="login.html" class="dropbtn">Login</a>
+                <div class="dropdown-content">
+                    <a href="student_login.html">Student Login</a>
+                    <a href="admin_login.html">Admin Login</a>
+                </div>
+            </li>
+            <li><a href="registration.html" class="active">Registration</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="results.html">Results</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Form -->
+    <div class="container" style="max-width:800px; margin:auto; margin-top:50px; background:white; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+        <h2 style="text-align:center; color:#003366;">Student Registration Form</h2>
+        <form>
+            <div class="form-grid">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="date" name="dob" required>
+
+                <select name="gender" required>
+                    <option value="">Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <input type="text" name="username" placeholder="Create Username" required>
+
+                <input type="text" name="courseName" placeholder="Course Name" required>
+                <input type="text" name="courseCode" placeholder="Course Code" required>
+
+                <input type="text" name="rollNumber" placeholder="Roll Number" required>
+                <select name="year" required>
+                    <option value="">Year</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+
+                <select name="regulation" required>
+                    <option value="">Regulation</option>
+                    <option>R19</option>
+                    <option>R20</option>
+                    <option>R21</option>
+                </select>
+                <select name="semester" required>
+                    <option value="">Semester</option>
+                    <option>1st Sem</option>
+                    <option>2nd Sem</option>
+                </select>
+
+                <input type="password" name="password" placeholder="Create Password" required>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+
+            <textarea name="address" placeholder="Address" rows="3" style="width:100%; margin-top:10px;" required></textarea>
+
+            <label style="margin-top:10px; display:block;">Upload ID Proof:</label>
+            <input type="file" name="idProof" required>
+
+            <button type="submit" style="margin-top:15px; background:linear-gradient(to right,#2196F3,#4CAF50); color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; font-size:16px;">
+                Register
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
